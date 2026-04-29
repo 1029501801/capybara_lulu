@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互动乐园 - 水豚噜噜萌宠乐园</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="capy-icon">🦫</span>
+                <h1>水豚噜噜</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于噜噜</a></li>
+                <li><a href="interact.html" class="active">互动乐园</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="interact-hero">
+            <h2>和噜噜一起玩耍</h2>
+            <p>点击、拖拽、互动，看看噜噜会有什么反应！</p>
+        </section>
+
+        <section class="interact-area">
+            <div class="capy-interact-container" id="capy-playground">
+                <div class="interact-capy" id="interact-capy">
+                    <div class="capy-emotion" id="capy-emotion"></div>
+                    <div class="capy-body">
+                        <div class="capy-head">
+                            <div class="capy-ears">
+                                <span class="ear left"></span>
+                                <span class="ear right"></span>
+                            </div>
+                            <div class="capy-face">
+                                <div class="eyes">
+                                    <span class="eye left"></span>
+                                    <span class="eye right"></span>
+                                </div>
+                                <div class="nose"></div>
+                                <div class="mouth"></div>
+                            </div>
+                        </div>
+                        <div class="capy-body-part"></div>
+                        <div class="capy-legs">
+                            <span class="leg"></span>
+                            <span class="leg"></span>
+                            <span class="leg"></span>
+                            <span class="leg"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="food-items" id="food-items">
+                    <div class="food" data-food="grass">🌿 草</div>
+                    <div class="food" data-food="carrot">🥕 胡萝卜</div>
+                    <div class="food" data-food="apple">🍎 苹果</div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="action-btn" id="pet-btn">👋 摸摸</button>
+                    <button class="action-btn" id="feed-btn">🍽️ 喂食</button>
+                    <button class="action-btn" id="play-btn">🎮 玩耍</button>
+                    <button class="action-btn" id="sleep-btn">😴 睡觉</button>
+                </div>
+
+                <div class="status-panel">
+                    <div class="status-bar">
+                        <span class="status-label">❤️ 心情</span>
+                        <div class="status-fill" id="mood-bar"></div>
+                    </div>
+                    <div class="status-bar">
+                        <span class="status-label">🍽️ 饱食</span>
+                        <div class="status-fill" id="hunger-bar"></div>
+                    </div>
+                    <div class="status-bar">
+                        <span class="status-label">😴 精力</span>
+                        <div class="status-fill" id="energy-bar"></div>
+                    </div>
+                </div>
+
+                <div class="message-bubble" id="message-bubble"></div>
+            </div>
+        </section>
+
+        <section class="game-section">
+            <h3>小游戏：找到噜噜</h3>
+            <p>在下面的图片中找到隐藏的水豚噜噜！</p>
+            <div class="find-capy-game" id="find-capy-game">
+                <div class="game-grid" id="game-grid">
+                    <!-- 游戏格子将由JS生成 -->
+                </div>
+                <p class="game-hint" id="game-hint">点击你认为有水豚的位置</p>
+                <p class="game-score" id="game-score">得分: 0</p>
+                <button class="game-btn" id="reset-game">重新开始</button>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h3>噜噜的表情包</h3>
+            <div class="emoji-carousel" id="emoji-carousel">
+                <button class="carousel-btn prev" id="prev-emoji">◀️</button>
+                <div class="carousel-track" id="carousel-track">
+                    <div class="emoji-item">🦫❤️</div>
+                    <div class="emoji-item">🦫💧</div>
+                    <div class="emoji-item">🦫🌿</div>
+                    <div class="emoji-item">🦫😴</div>
+                    <div class="emoji-item">🦫🎮</div>
+                    <div class="emoji-item">🦫🥕</div>
+                    <div class="emoji-item">🦫💤</div>
+                    <div class="emoji-item">🦫✨</div>
+                </div>
+                <button class="carousel-btn next" id="next-emoji">▶️</button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 水豚噜噜萌宠乐园</p>
+            <div class="social-links">
+                <a href="#" class="social-link">📱</a>
+                <a href="#" class="social-link">📸</a>
+                <a href="#" class="social-link">💬</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
